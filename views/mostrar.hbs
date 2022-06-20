@@ -1,0 +1,27 @@
+<div style="background-color: grey; width: 900px; height: 500px; margin: 0px auto; border: 1px solid black;">
+<a class="nav-link active" aria-current="page" href="/">Home</a>
+
+
+{{#if hasAny}}
+            <ul>
+                {{#each Tienda}}
+                   <h3>Vista del Producto</h1>
+                <li> Producto:   {{this.producto}}     </li> 
+                <li>  Precio:    {{this.precio}}       </li>
+                <li> Thumbnail:  {{this.thumbnail}}    </li>
+                   
+
+                 {{/each}}
+
+            </ul>
+
+{{else }} 
+  <p style="color: white;"Aún no hay productos registrados</p>    
+
+
+
+ {{/if}}
+
+
+
+</div>
